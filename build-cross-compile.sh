@@ -32,6 +32,8 @@ cd build-binutils
 make -j12 
 sudo make -j12 install
 
+cd ..
+
 mkdir build-gcc
 cd build-gcc
 ../gcc-4.9.1/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-languages=c,c++ --without-headers
@@ -39,7 +41,3 @@ make -j12 all-gcc
 make -j12 all-target-libgcc
 sudo make install-gcc
 sudo make install-target-libgcc
-
-
-
-

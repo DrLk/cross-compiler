@@ -25,7 +25,6 @@ export PREFIX="$HOME/opt/cross"
 export TARGET=x86_64-elf 
 export PATH="$PREFIX/bin:$PATH"
 
-cd $HOME/src 
 mkdir build-binutils 
 cd build-binutils 
 ../binutils-2.14/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --disable-werror 
